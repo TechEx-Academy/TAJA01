@@ -1,19 +1,31 @@
 package days.day8;
 
-public class MethodOverLoadingSample {
+import java.util.jar.Manifest;
+
+public class MethodOverloadingSample {
     public static void main(String[] args) {
-        Calculator c = new Calculator();
-        c.add(3);
-        c.add(1, 2);
+
+        Animal a;
+
+        if(args[0].equals("animal")){
+            a = new Animal();
+        }else{
+            a = new Fish();
+        }
+
+        a.move();
+
     }
 }
 
-class Calculator{
-    int add(int a){
-        return a ;
+class Animal{
+    void move(){
+        System.out.println("Move");
     }
+}
 
-    float add(int b, int v){
-        return b;
+class Fish extends Animal{
+    void move(){
+        System.out.println("Swim");
     }
 }
