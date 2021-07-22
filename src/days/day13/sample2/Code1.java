@@ -1,7 +1,5 @@
 package days.day13.sample2;
 
-import days.day6.A;
-
 import java.util.ArrayList;
 
 public class Code1 {
