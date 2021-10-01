@@ -34,6 +34,8 @@ public class Code2 {
                 );
 
         System.out.println(student2.phone.simCard.serviceProvider);
+        
+        System.out.println(student.phone.simCard.serviceProvider);
     }
 }
 
